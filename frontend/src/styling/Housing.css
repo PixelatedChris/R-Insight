@@ -1,0 +1,41 @@
+.housing-card {
+  width: 100%; /* Uses the full width it can within the grid */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease;
+  border-radius: 8px; /* Adds rounded corners for a softer look */
+  overflow: hidden; /* Ensures that child elements don't overflow the rounded corners */
+}
+
+.housing-card:hover {
+  transform: translateY(-5px); /* Slightly raises the card on hover for interaction */
+}
+
+.housing-image {
+  width: 100%; /* Ensures the image covers the width of the card */
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+
+/* Apply a modern look for the card details */
+.card-body {
+  background: rgba(255, 255, 255, 0.9); /* Slightly see-through white */
+  padding: 20px; /* Adds some padding inside the card for spacing */
+  transition: background-color 0.3s ease;
+}
+
+.card-body:hover {
+  background: rgba(255, 255, 255, 1); /* Solid white on hover */
+}
+
+.card-title {
+  font-size: 1.60rem; /* Increases the font size */
+  color: #333; /* Dark text for better readability */
+  margin-bottom: 0.75rem; /* Adjusts spacing below the title */
+  font-weight: 500; /* Adjusts font weight for title prominence */
+}
+
+.card-text {
+  color: rgb(32, 30, 30); /* Lighter text for descriptions */
+  font-size: 1rem; /* Adjusts font size for readability */
+}

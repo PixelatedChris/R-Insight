@@ -1,0 +1,86 @@
+/* HomeScreen.css */
+.home-screen-container {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  min-height: calc(100vh - (50px + 100px));
+  width: 100%;
+  
+  
+}
+
+.home-screen-container::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+  
+}
+
+.homescreen-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.8vw;
+  font-weight: 700;
+  color: #062211;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 3px 3px 6px rgba(12, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the housing cards */
+/* Styles for the housing cards */
+.housing-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  border: 4px solid #062211; /* Added border to the cards */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.8); /* Adjust the opacity here */
+  position: relative;
+  z-index: 0;
+}
+
+
+.housing-card:hover {
+  transform: translateY(-5px); /* Lift the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  opacity: 1; /* Make card fully opaque */
+  background: rgba(255, 255, 255, 1); /* Optional: make background fully opaque on hover */
+}
+
+.housing-image {
+  height: 200px;
+  border-top-left-radius: 4px; /* Ensure the image top corners match the card's border-radius */
+  border-top-right-radius: 4px;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Add your existing styles for .card-title and .card-text here */
+
+.card-text:last-child {
+  min-height: 60px;
+  overflow: hidden;
+}
+.row { /* This targets the Bootstrap Row, adjust the class name if you use a specific one */
+  display: flex;
+  justify-content: center; /* This will center the flex items (columns) horizontally */
+}

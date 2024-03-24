@@ -1,0 +1,37 @@
+.rating {
+  color: #ffc107; /* Golden color for stars */
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2rem; /* Slightly larger stars for better visibility */
+  font-weight: bold; /* Make stars slightly bolder */
+}
+
+.star {
+  margin: 0 3px; /* Slightly more space around each star for clarity */
+  transition: transform 0.2s ease, color 0.2s ease; /* Smooth color transition on hover */
+  cursor: pointer; /* Indicates that stars are interactive */
+}
+
+.star:hover, .star:hover ~ .star {
+  transform: scale(1.1); /* Scale stars on hover for a subtle animation effect */
+  color: #ffc107; /* Brighter gold color on hover for added emphasis */
+}
+
+.rating-text {
+  margin-left: 8px; 
+  font-size: 1rem; 
+  color: #333; 
+  white-space: nowrap; 
+  font-weight: normal; 
+}
+
+/* Enhance responsiveness for the Rating component */
+@media (max-width: 768px) {
+  .rating {
+    font-size: 1rem; /* Adjust star size for smaller screens */
+  }
+
+  .rating-text {
+    font-size: 0.9rem; /* Slightly reduce the text size for consistency */
+  }
+}

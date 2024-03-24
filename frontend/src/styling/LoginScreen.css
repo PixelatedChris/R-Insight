@@ -1,0 +1,102 @@
+/* Login.css */
+
+/* Define CSS Variables */
+:root {
+    --primary-color: #0f0f10; /* Bootstrap primary blue */
+    --error-color: #dc3545; /* Bootstrap danger red */
+    --text-color: #212529; /* Bootstrap default black */
+    --background-color: #f8f9fa; /* Bootstrap light background */
+    --border-color: #060606; /* Bootstrap light border */
+    --hover-color: #083d14;
+  }
+  
+  /* Apply Google Font */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  /* Global Styles */
+  body, html {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-color);
+    padding-top: 20px; /* Adjusted for demo purposes */
+  }
+  
+  /* Form Container Styles */
+  .form-container {
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 2rem;
+  }
+  
+  /* Title Styles */
+  .login-title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  .login-form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .login-form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .login-form-label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-form-control {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Button Styles */
+  .login-btn {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+    color: rgb(233, 243, 237);
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    background-color: var(--hover-color); /* Green color on hover */
+    border-color: var(--hover-color); /* Adjust border color too if needed */
+  }
+  
+  
+  /* Message Styles */
+  .message {
+    color: var(--error-color);
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  /* Footer Styles */
+  .login-footer {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .login-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  

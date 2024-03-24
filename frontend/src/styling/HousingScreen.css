@@ -1,0 +1,318 @@
+/* Define CSS Variables */
+:root {
+  --primary-color: #000000; /* Black for primary color */
+  --text-color: #333;
+  --background-color: #141313;
+  --border-color: #000000; /* Black for border color */
+  --hover-color: #0c361f;
+  --secondary-text-color: #666;
+  --white-color: #ffffff;
+}
+
+/* Apply Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Housing Details Styles */
+.housing-details {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Image Container */
+.image-container {
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 5px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Housing Info */
+.housing-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  padding: 20px;
+  margin: 10px 0;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.housing-info h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.housing-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Housing Description */
+.housing-description {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+
+
+.review-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.review-section h2 {
+  text-align: center;
+  color: var(--primary-color); /* Black color */
+  font-weight: bold; /* Bold font */
+  margin-bottom: 1rem;
+}
+
+/* Review Items */
+.review-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--white-color);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.review-item strong {
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.review-item p {
+  color: var(--secondary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Write Review Form */
+.write-review {
+  background: var(--white-color);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.write-review h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.write-review form {
+  display: flex;
+  flex-direction: column;
+}
+
+.write-review form label {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.write-review form textarea, .write-review form select {
+  height: 100px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+}
+
+.write-review form button {
+  max-width: 200px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.write-review form button:hover {
+  background: var(--hover-color);
+}
+.form {
+  max-width: 1200px; /* Match the width of the upper content container */
+  width: 100%; /* Use the full width available */
+  margin: 2rem auto; /* Center the form in the page */
+  padding: 1rem; /* Padding for the form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth (optional) */
+  background: var(--white-color); /* Background color */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.form h2 {
+  color: var(--primary-color); /* Set color for the title */
+  font-weight: bold; /* Make title bold */
+  margin-bottom: 1.5rem; /* Space below the title */
+}
+
+.form label {
+  font-weight: bold; /* Make label text bold */
+  margin-top: 1rem; /* Space above the label */
+  margin-bottom: 0.5rem; /* Space below the label */
+  self-align: start; /* Align labels to the start */
+}
+
+.form select, .form .custom-textarea {
+  width: 100%; /* Full width of the form */
+  padding: 0.75rem; /* Padding inside the inputs */
+  margin-bottom: 1rem; /* Space below the inputs */
+  border: 1px solid var(--border-color); /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+}
+
+.form .custom-textarea {
+  height: 150px; /* Larger height for textarea */
+  resize: vertical; /* Allow only vertical resizing */
+}
+
+.form select,
+.form .form-control.custom-textarea {
+  width: 100%; /* Full width for select and textarea */
+  padding: 0.75rem; /* Padding inside the inputs */
+  margin-bottom: 1rem; /* Space below the inputs */
+  border: 1px solid var(--border-color); /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+}
+
+/* Specific styles for the button within the .form class */
+.form button {
+  padding: 0.75rem 1.5rem; /* Padding */
+  background-color: var(--primary-color); /* Background color */
+  color: var(--white-color); /* Text color */
+  font-weight: bold; /* Bold font weight */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer to indicate clickability */
+  transition: background-color 0.2s; /* Smooth transition for background color */
+  margin: 1rem auto; /* Margin top and auto margin for horizontal centering */
+  display: block; /* Block display to fill width with padding only */
+  width: auto; /* Auto width based on content */
+  max-width: 200px; /* Maximum width of the button */
+}
+
+/* Button hover effect */
+.form button:hover {
+  background-color: var(--hover-color); /* Darker color on hover */
+}
+.review-message {
+  text-align: center; /* Centers text */
+  margin: 20px 0; /* Adds top and bottom margin */
+  padding: 10px; /* Adds padding inside the message box */
+  background-color: #e6f7ff; /* Light blue background for visibility */
+  border: 1px solid #b3daff; /* Light blue border to stand out */
+  border-radius: 4px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.review-message a {
+  color: #0056b3; /* Color for links to make them stand out */
+  text-decoration: underline; /* Underlines the link */
+}
+
+.review-message a:hover {
+  color: #003975; /* Darker color on hover for the link */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .image-container {
+    margin-bottom: 1rem;
+  }
+
+  .write-review form button {
+    max-width: 100%;
+  }
+}
+
+/* Add additional styles as necessary */
+
+/* Additions to the .write-review form styles for better look */
+.write-review form {
+  background: #fff; /* Add a background color to the form area */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  border-radius: 8px; /* Rounded corners for the form */
+  padding: 1rem;
+}
+
+.write-review form h2 {
+  text-align: center;
+  color: #0056b3; /* Match the color scheme of your titles */
+  margin-bottom: 1rem;
+}
+
+.write-review form .form-group {
+  margin-bottom: 1rem; /* Add space below each form group */
+}
+
+.write-review form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.write-review form select,
+.write-review form textarea,
+.write-review form button {
+  width: 100%; /* Full width */
+  padding: 0.5rem;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Slight rounding of corners */
+  margin-bottom: 1rem; /* Space below each input */
+}
+
+.write-review form textarea {
+  height: 100px; /* Set a fixed height for the textarea */
+}
+
+/* Other button styles are already well defined */
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .write-review form {
+    padding: 1rem;
+  }
+}
